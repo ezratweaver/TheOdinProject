@@ -1,8 +1,8 @@
+const canvasSize = 832
+
 let parents = []
 
 let canvas = []
-
-
 
 for (let i=0; i <= 16; ++i) {
 
@@ -26,6 +26,15 @@ for (let i=0; i <= 16; ++i) {
         div.style.minWidth = "52px"
 
         div.style.border = "1px solid black"
+
+        div.addEventListener("mouseenter", () => {
+            div.style.backgroundColor = "red"
+        })
+
+        div.addEventListener("mouseleave", () => {
+            div.style.backgroundColor = "white"
+        })
+
 
         parentDiv.appendChild(div)
 
