@@ -1,47 +1,48 @@
 const canvasSize = 832
 
-let parents = []
-
 let canvas = []
 
-for (let i=0; i <= 16; ++i) {
+function getDivSize(x) {
+    return Math.round(canvasSize / x)
+}
 
-    let parentDiv = document.createElement("div")
+function genCanvas() {
 
-    parentDiv.id = i
+    for (let i=0; i <= 16; ++i) {
 
-    parentDiv.classList.toggle("parent")
+        let parentDiv = document.createElement("div")
 
-    parents.push(parentDiv) 
+        parentDiv.id = i
 
-    let row = []
-    
-    for (let x=0; x <= 16; ++x) {
+        parentDiv.classList.toggle("parent")
 
-        let div = document.createElement("div") 
+        let row = []
+        
+        for (let x=0; x <= 16; ++x) {
 
-        div.id = `${i}-${x}`
+            let div = document.createElement("div") 
 
-        div.style.minHeight = "52px"
-        div.style.minWidth = "52px"
+            div.id = `${i}-${x}`
 
-        div.style.border = "1px solid black"
+            div.style.minHeight = "52px"
+            div.style.minWidth = "52px"
 
-        div.addEventListener("mouseenter", () => {
-            div.style.backgroundColor = "red"
-        })
+            div.style.border = "1px solid black"
 
-        div.addEventListener("mouseleave", () => {
-            div.style.backgroundColor = "white"
-        })
+            div.addEventListener("mouseenter", () => {
+                div.style.backgroundColor = "red"
+            })
 
+            parentDiv.appendChild(div)
 
-        parentDiv.appendChild(div)
+            row.push(div)
+        }
 
-        row.push(div)
+        canvas.push(row)
+
+        document.body.appendChild(parentDiv)
     }
 
-    canvas.push(row)
-
-    document.body.appendChild(parentDiv)
 }
+
+genCanvas()
