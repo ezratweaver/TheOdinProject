@@ -6,6 +6,9 @@ let canvas = []
 
 let parents = []
 
+const resetButton = document.getElementById("reset")
+
+
 function getDivSize(userGridAmount) {
     return Math.round(canvasSize / userGridAmount)
 }
@@ -14,7 +17,9 @@ function genCanvas(userGridAmount) {
 
     let divSize = getDivSize(userGridAmount)
 
-    for (let i=0; i <= 16; ++i) {
+    let dimension = getDivSize(divSize)
+
+    for (let i=1; i <= dimension; ++i) {
 
         let parentDiv = document.createElement("div")
 
@@ -26,7 +31,7 @@ function genCanvas(userGridAmount) {
 
         let row = []
         
-        for (let x=0; x <= 16; ++x) {
+        for (let x=1; x <= dimension; ++x) {
 
             let div = document.createElement("div") 
 
@@ -57,7 +62,15 @@ function clearCanvas() {
     for (const parent of parents) {
         document.body.removeChild(parent)
     }
+
+}
+
+function resetButtonPressed() {
+    clearCanvas()
+    let userInput = prompt("Please enter grid dimension e.g. 16 would be 16x16")
+    genCanvas(Number.parseInt(userInput))
 }
 
 genCanvas(16)
-clearCanvas()
+
+resetButton.addEventListener("click", resetButtonPressed)
