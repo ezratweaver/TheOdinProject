@@ -1,12 +1,18 @@
 const canvasSize = 832
 
+let userGridAmount = 16
+
 let canvas = []
 
-function getDivSize(x) {
-    return Math.round(canvasSize / x)
+let parents = []
+
+function getDivSize(userGridAmount) {
+    return Math.round(canvasSize / userGridAmount)
 }
 
-function genCanvas() {
+function genCanvas(userGridAmount) {
+
+    let divSize = getDivSize(userGridAmount)
 
     for (let i=0; i <= 16; ++i) {
 
@@ -16,6 +22,8 @@ function genCanvas() {
 
         parentDiv.classList.toggle("parent")
 
+        parents.push(parentDiv)
+
         let row = []
         
         for (let x=0; x <= 16; ++x) {
@@ -24,8 +32,8 @@ function genCanvas() {
 
             div.id = `${i}-${x}`
 
-            div.style.minHeight = "52px"
-            div.style.minWidth = "52px"
+            div.style.minHeight = `${divSize}px`
+            div.style.minWidth = `${divSize}px`
 
             div.style.border = "1px solid black"
 
@@ -45,4 +53,11 @@ function genCanvas() {
 
 }
 
-genCanvas()
+function clearCanvas() {
+    for (const parent of parents) {
+        document.body.removeChild(parent)
+    }
+}
+
+genCanvas(16)
+clearCanvas()
