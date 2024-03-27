@@ -63,9 +63,11 @@ function clearCanvas() {
         document.body.removeChild(parent)
     }
 
+    parents = []
 }
 
 function resetButtonPressed() {
+    console.log("ran")
     clearCanvas()
     let userInput = prompt("Please enter grid dimension e.g. 16 would be 16x16")
     genCanvas(Number.parseInt(userInput))
