@@ -44,12 +44,36 @@ button {
     background-color: #6A6B60; 
 }
 
+.util:hover {
+    background-color: #8C8D7F;
+}
+
+.util:active {
+    background-color: #B7B8A8;
+}
+
 .operator {
     background-color: #333333;
 }
 
+.operator:hover {
+    background-color: #494747;
+}
+
+.operator:active {
+    background-color: #7E7E7E;
+}
+
 .number {
     background-color: #F0E823;
+}
+
+.number:hover {
+    background-color: #F0EA61;
+}
+
+.number:active {
+    background-color: #F4F1AC;
 }
 
 #zero {
