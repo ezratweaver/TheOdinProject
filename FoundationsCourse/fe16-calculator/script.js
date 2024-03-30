@@ -2,9 +2,12 @@ const buttonsContainer = document.getElementById("buttons")
 
 const input = document.getElementById("input")
 
+input.textContent = ''
+
 let firstNumberInput
 let secondNumberInput
 let operation
+let nextInputClears = false
 
 const clearInput = () => {
     input.textContent = ""
@@ -38,9 +41,6 @@ const clearNumbersAndOperations = () => {
 }
 
 const doMath = (operation, firstNumberInput, secondNumberInput) => {
-    console.log(firstNumberInput)
-    console.log(operation)
-    console.log(secondNumberInput)
     switch (operation) {
         case '%':
             return firstNumberInput % secondNumberInput
@@ -84,9 +84,25 @@ const handleOtherPressed = (target) => {
                 secondNumberInput = getInputAsNumber()
                 clearInput()
 
-                input.textContent = doMath(
+                let answer = doMath(
                     operation, firstNumberInput, secondNumberInput)
 
+                if (Number.isInteger(answer)) {
+                    if (answer.toString().length > 11) {
+                        input.textContent = answer.toString().substring(0, 8) + "..."
+                    }
+                    else {
+                        input.textContent = answer
+                    }
+                }
+                else if (answer.toString().length > 11) {
+                    input.textContent = answer.toFixed(11 - Math.abs(Math.floor(answer)).toString().length)
+                }
+                else {
+                    input.textContent = answer
+                }
+
+                nextInputClears = true
                 clearNumbersAndOperations()
             }
             break
@@ -109,6 +125,12 @@ const handleOtherPressed = (target) => {
 }
 
 const handleNumberPressed = (target) => {
+    if (nextInputClears) {
+        clearInput()
+        nextInputClears = false
+    }
+    if (input.textContent.length >= 11)
+        return
     input.textContent += target.textContent
 }
 
