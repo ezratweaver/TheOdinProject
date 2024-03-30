@@ -10,11 +10,11 @@ let operation
 let nextInputClears = false
 
 const clearInput = () => {
-    input.textContent = ""
+    input.textContent = ''
 }
 
 const inputNotEmpty = () => {
-    return input.textContent != ""
+    return input.textContent != ''
 
 }
 
@@ -56,7 +56,7 @@ const doMath = (operation, firstNumberInput, secondNumberInput) => {
 }
 
 const handleOperator = (operator) => {
-    if (inputNotEmpty) {
+    if (inputNotEmpty()) {
         if (firstNumberInput == undefined) {
             operation = operator
             firstNumberInput = getInputAsNumber()
