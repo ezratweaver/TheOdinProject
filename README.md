@@ -1,2 +1,2 @@
 # TheOdinProject
-My homework for The Odin Project
+I am currently still working on this course!
