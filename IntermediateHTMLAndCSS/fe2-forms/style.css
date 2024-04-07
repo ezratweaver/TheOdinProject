@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.buttons {
+
+}
