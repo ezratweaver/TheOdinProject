@@ -3,14 +3,14 @@ html {
     margin: 0;
 }
 
-#backdrop img {
+.backdrop img {
   height: 480px;
   width: 280px;
   object-fit: cover;
   object-position: 63%;
 }
 
-#backdrop .logo {
+.backdrop .logo {
   display: flex;
   justify-content: center;
   align-items: center;
