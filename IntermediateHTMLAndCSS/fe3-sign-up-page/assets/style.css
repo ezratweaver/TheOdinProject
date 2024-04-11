@@ -1,0 +1,25 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+#backdrop img {
+  height: 480px;
+  width: 280px;
+  object-fit: cover;
+  object-position: 63%;
+}
+
+#backdrop .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  width: 29.8%;
+  height: 10%;
+  background: black;
+  color: white;
+  position: absolute;
+  top: 140px;
+}
+
