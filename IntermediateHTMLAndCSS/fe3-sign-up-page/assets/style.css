@@ -14,12 +14,19 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
-  width: 29.8%;
-  height: 10%;
-  background: black;
-  color: white;
+  width: 280px;
+  height: 65px;
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 140px;
+}
+
+.backdrop .text {
+  color: white;
+}
+
+.backdrop .text img {
+  height: 35px;
+  width: 35px;
 }
 
