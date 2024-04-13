@@ -1,6 +1,9 @@
-html {
-    padding: 0;
-    margin: 0;
+.wholething {
+  margin-top: 20%;
+  display: flex;
+  /* border: 1px solid black; */
+  /* border-radius: 5px; */
+  height: 480px;
 }
 
 @font-face {
@@ -23,7 +26,7 @@ html {
   height: 80px;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 140px;
+  top: 290px;
 }
 
 .backdrop > .logo > .text {
@@ -40,3 +43,6 @@ html {
   width: 50px;
 }
 
+.main {
+  height: 480px;
+}
