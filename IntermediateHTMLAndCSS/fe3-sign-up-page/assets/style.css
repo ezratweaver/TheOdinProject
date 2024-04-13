@@ -49,14 +49,20 @@
 
 .main > .calltoaction {
   margin-top: 60px;
+  max-width: 480px;
 }
 
 .main > .emphasize {
   margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .main .calltoaction, .main .emphasize, .signup > .text {
-  margin-left: 20px;
+  margin-left: 25px;
+}
+
+.main > .signup {
+
 }
 
 
