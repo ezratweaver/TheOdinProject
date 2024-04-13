@@ -3,7 +3,7 @@ html {
     margin: 0;
 }
 
-.backdrop img {
+.backdrop > img {
   height: 480px;
   width: 280px;
   object-fit: cover;
@@ -21,12 +21,12 @@ html {
   top: 140px;
 }
 
-.backdrop .text {
+.backdrop > .logo > .text {
   color: white;
 }
 
-.backdrop .text img {
-  height: 35px;
-  width: 35px;
+.backdrop > .logo > .text > img {
+  height: 50px;
+  width: 40px;
 }
 
