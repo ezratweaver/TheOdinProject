@@ -1,5 +1,5 @@
 .wholething {
-  margin-top: 20%;
+  margin-top: 200px;
   display: flex;
   /* border: 1px solid black; */
   /* border-radius: 5px; */
@@ -46,3 +46,18 @@
 .main {
   height: 480px;
 }
+
+.main > .calltoaction {
+  margin-top: 60px;
+}
+
+.main > .emphasize {
+  margin-top: 15px;
+}
+
+.main .calltoaction, .main .emphasize, .signup > .text {
+  margin-left: 20px;
+}
+
+
+
