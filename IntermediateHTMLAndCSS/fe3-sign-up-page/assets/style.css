@@ -3,6 +3,11 @@ html {
     margin: 0;
 }
 
+@font-face {
+  font-family: odinFont;
+  src: url(Norse-Bold.otf);
+}
+
 .backdrop > img {
   height: 480px;
   width: 280px;
@@ -15,7 +20,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 280px;
-  height: 65px;
+  height: 80px;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 140px;
@@ -23,10 +28,15 @@ html {
 
 .backdrop > .logo > .text {
   color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 3rem;
+  font-family: odinFont;
 }
 
 .backdrop > .logo > .text > img {
-  height: 50px;
-  width: 40px;
+  height: 60px;
+  width: 50px;
 }
 
