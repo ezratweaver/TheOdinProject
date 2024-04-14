@@ -48,7 +48,7 @@
 }
 
 .main > .calltoaction {
-  margin-top: 60px;
+  margin-top: 37px;
   max-width: 480px;
 }
 
@@ -57,8 +57,7 @@
   margin-bottom: 40px;
 }
 
-.main .calltoaction, .main .emphasize,
-.signup > .text, .main form {
+.main {
   margin-left: 25px;
 }
 
@@ -68,8 +67,17 @@
   flex-wrap: wrap;
   max-height: 150px;
   max-width: 480px;
+  margin-top: 12px;
 }
 
 .main form input {
   max-width: 180px;
+}
+
+.main button {
+  margin-top: 24px;
+}
+
+.main .already {
+  margin-top: 26px;
 }
