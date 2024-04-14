@@ -76,8 +76,22 @@
 
 .main button {
   margin-top: 24px;
+  background-color: #596D48;
+  padding: 9px;
+  padding-inline: 30px;
+  font-weight: 700;
+  color: white;
+  border-radius: 6px;
+  border: 0;
 }
 
 .main .already {
   margin-top: 26px;
+  font-size: 0.8rem;
+}
+
+.main .already a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: 600;
 }
