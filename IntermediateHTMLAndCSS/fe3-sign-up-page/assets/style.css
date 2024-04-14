@@ -49,12 +49,19 @@
 
 .main > .calltoaction {
   margin-top: 37px;
-  max-width: 480px;
+  max-width: 500px;
+  font-weight: 500;
 }
 
 .main > .emphasize {
   margin-top: 15px;
   margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.main .signup .text {
+  font-weight: 500;
+  font-size: 1.05rem;
 }
 
 .main {
