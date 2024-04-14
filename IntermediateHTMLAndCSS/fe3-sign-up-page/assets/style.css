@@ -72,13 +72,19 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 150px;
+  max-height: 120px;
   max-width: 480px;
-  margin-top: 12px;
+  margin-top: 18px;
 }
 
 .main form input {
   max-width: 180px;
+  border: 1.3px solid #E5E7EB;
+  margin-block: 2px;
+}
+
+.main label {
+  font-size: 0.7rem;
 }
 
 .main button {
