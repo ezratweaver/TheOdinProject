@@ -4,6 +4,7 @@
   /* border: 1px solid black; */
   /* border-radius: 5px; */
   height: 480px;
+  background-color: #f9fafb;
 }
 
 @font-face {
@@ -47,6 +48,19 @@
   height: 480px;
 }
 
+.main > :not(.signup) {
+  margin-left: 25px;
+}
+
+.main > .signup {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+              0 -2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 25px;
+  padding-block: 13px;
+  width: 120%;
+  background-color: white;
+}
+
 .main > .calltoaction {
   margin-top: 37px;
   max-width: 500px;
@@ -64,17 +78,13 @@
   font-size: 1.05rem;
 }
 
-.main {
-  margin-left: 25px;
-}
-
 .main form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 150px;
   max-width: 480px;
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 .main form input {
@@ -106,7 +116,7 @@
 }
 
 .main .already {
-  margin-top: 26px;
+  margin-top: 20px;
   font-size: 0.8rem;
 }
 
