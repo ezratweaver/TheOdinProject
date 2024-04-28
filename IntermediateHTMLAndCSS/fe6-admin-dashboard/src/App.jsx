@@ -6,16 +6,15 @@ const layoutCss = {
   display: "grid",
   gridTemplateAreas: `
     'sidebar header'
-    'sidebar content'
-    `,
-  gridTemplateColumns: "250px 7fr",
-  gridTemplateRows: "250px 7fr",
+    'sidebar content'`,
+  gridTemplateColumns: "250px 1fr",
+  gridTemplateRows: "1fr 8fr",
 };
 
 const App = () => {
   return (
     <div style={layoutCss}>
-      <div style={{ gridArea: "header" }}>
+      <div style={{ gridArea: "header", zIndex: 1 }}>
         <Header />
       </div>
       <div style={{ gridArea: "sidebar" }}>
