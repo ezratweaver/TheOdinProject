@@ -17,7 +17,7 @@ const StyledIcon = ({ path, size }) => {
   return <Icon path={path} size={size ?? 1.1} color="white" />;
 };
 
-const SideBarLiCss = { display: 'flex', alignItems: 'center', gap: '14px', fontWeight: 550 }
+const SideBarLiCss = { display: 'flex', alignItems: 'center', gap: '14px', fontFamily: 'Roboto-Medium', fontWeight: 600 }
 
 const Sidebar = () => {
   return (
