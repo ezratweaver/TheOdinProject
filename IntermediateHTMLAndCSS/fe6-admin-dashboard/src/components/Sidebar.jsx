@@ -17,6 +17,8 @@ const StyledIcon = ({ path, size }) => {
   return <Icon path={path} size={size ?? 1.1} color="white" />;
 };
 
+const SideBarLiCss = { display: 'flex', alignItems: 'center', gap: '14px', fontWeight: 550 }
+
 const Sidebar = () => {
   return (
     <div
@@ -43,40 +45,40 @@ const Sidebar = () => {
           gap: '14px',
         }}
       >
-        <li>
+        <li style={SideBarLiCss}>
           <StyledIcon path={mdiHome} />
           Home
         </li>
-        <li>
+        <li style={SideBarLiCss}>
           <StyledIcon path={mdiCardAccountDetailsOutline} />
           Profile
         </li>
-        <li>
+        <li style={SideBarLiCss}>
           <StyledIcon path={mdiMessage} />
           Messages
         </li>
-        <li>
+        <li style={SideBarLiCss}>
           <StyledIcon path={mdiHistory} />
           History
         </li>
-        <li>
+        <li style={SideBarLiCss}>
           <StyledIcon path={mdiFileMultiple} />
           Tasks
         </li>
-        <li>
+        <li style={SideBarLiCss}>
           <StyledIcon path={mdiAccountGroup} />
           Communities
         </li>
         <li style={{ marginBlock: "20px" }}></li>
-        <li>
+        <li style={SideBarLiCss}>
           <StyledIcon path={mdiCog} />
           Settings
         </li>
-        <li>
+        <li style={SideBarLiCss}>
           <StyledIcon path={mdiMessageQuestionOutline} />
           Support
         </li>
-        <li>
+        <li style={SideBarLiCss}>
           <StyledIcon path={mdiShieldCheck} />
           Privacy
         </li>
