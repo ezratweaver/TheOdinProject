@@ -17,7 +17,14 @@ const StyledIcon = ({ path, size }) => {
   return <Icon path={path} size={size ?? 0.8} color="white" />;
 };
 
-const SideBarLiCss = { display: 'flex', alignItems: 'center', gap: '14px', fontFamily: 'Roboto-Medium', fontWeight: 600, marginLeft: '18px' }
+const SideBarLiCss = {
+  display: "flex",
+  alignItems: "center",
+  gap: "14px",
+  fontFamily: "Roboto-Medium",
+  fontWeight: 600,
+  marginLeft: "18px",
+};
 
 const Sidebar = () => {
   return (
@@ -27,11 +34,21 @@ const Sidebar = () => {
         color: "white",
         display: "flex",
         flexDirection: "column",
-        padding: '15px',
-        paddingBottom: '100%'
+        padding: "15px",
+        paddingBottom: "100%",
       }}
     >
-      <div style={{ margin: '10px', paddingBottom: "19px", display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'Roboto-Bold', fontSize: '1.3rem' }}>
+      <div
+        style={{
+          margin: "10px",
+          paddingBottom: "19px",
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+          fontFamily: "Roboto-Bold",
+          fontSize: "1.3rem",
+        }}
+      >
         <StyledIcon path={mdiViewDashboard} size={1.6} />
         Dashboard
       </div>
@@ -44,7 +61,7 @@ const Sidebar = () => {
           padding: 0,
           display: "flex",
           flexDirection: "column",
-          gap: '14px',
+          gap: "14px",
         }}
       >
         <li style={SideBarLiCss}>
