@@ -8,8 +8,8 @@ const layoutCss = {
     'sidebar header'
     'sidebar content'
     `,
-  gridTemplateColumns: "1fr 7fr",
-  gridTemplateRows: "1fr 7fr",
+  gridTemplateColumns: "250px 7fr",
+  gridTemplateRows: "250px 7fr",
 };
 
 const App = () => {
