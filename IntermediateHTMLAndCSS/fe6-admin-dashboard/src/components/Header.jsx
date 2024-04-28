@@ -24,7 +24,7 @@ const HeaderButton = ({ name }) => {
 
 const Header = () => {
   return (
-    <div>
+    <div style={{ paddingBlock: '17px', boxShadow: '0 4px 4px -5px black' }}>
       <div
         style={{
           display: "flex",
