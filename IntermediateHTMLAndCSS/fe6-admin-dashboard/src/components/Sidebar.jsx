@@ -13,19 +13,36 @@ import {
   mdiShieldCheck,
 } from "@mdi/js";
 
-const StyledIcon = ({ path }) => {
-  return <Icon path={path} size={1} color="white" />;
+const StyledIcon = ({ path, size }) => {
+  return <Icon path={path} size={size ?? 1.1} color="white" />;
 };
 
 const Sidebar = () => {
   return (
-    <div style={{ backgroundColor: "#1992d4", color: "white" }}>
-      <div>
-        <StyledIcon path={mdiViewDashboard} />
+    <div
+      style={{
+        backgroundColor: "#1992d4",
+        color: "white",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <div style={{ paddingBottom: "30px" }}>
+        <StyledIcon path={mdiViewDashboard} size={2.2} />
         Dashboard
       </div>
 
-      <ul style={{ listStyle: "none", color: "white", margin: 0, padding: 0 }}>
+      <ul
+        style={{
+          listStyle: "none",
+          color: "white",
+          margin: 0,
+          padding: 0,
+          display: "flex",
+          flexDirection: "column",
+          gap: '14px',
+        }}
+      >
         <li>
           <StyledIcon path={mdiHome} />
           Home
