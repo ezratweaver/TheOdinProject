@@ -14,10 +14,10 @@ import {
 } from "@mdi/js";
 
 const StyledIcon = ({ path, size }) => {
-  return <Icon path={path} size={size ?? 1.1} color="white" />;
+  return <Icon path={path} size={size ?? 0.8} color="white" />;
 };
 
-const SideBarLiCss = { display: 'flex', alignItems: 'center', gap: '14px', fontFamily: 'Roboto-Medium', fontWeight: 600 }
+const SideBarLiCss = { display: 'flex', alignItems: 'center', gap: '14px', fontFamily: 'Roboto-Medium', fontWeight: 600, marginLeft: '18px' }
 
 const Sidebar = () => {
   return (
@@ -27,10 +27,12 @@ const Sidebar = () => {
         color: "white",
         display: "flex",
         flexDirection: "column",
+        padding: '15px',
+        paddingBottom: '100%'
       }}
     >
-      <div style={{ paddingBottom: "30px" }}>
-        <StyledIcon path={mdiViewDashboard} size={2.2} />
+      <div style={{ margin: '10px', paddingBottom: "19px", display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'Roboto-Bold', fontSize: '1.3rem' }}>
+        <StyledIcon path={mdiViewDashboard} size={1.6} />
         Dashboard
       </div>
 
@@ -69,7 +71,7 @@ const Sidebar = () => {
           <StyledIcon path={mdiAccountGroup} />
           Communities
         </li>
-        <li style={{ marginBlock: "20px" }}></li>
+        <li style={{ marginBlock: "10px" }}></li>
         <li style={SideBarLiCss}>
           <StyledIcon path={mdiCog} />
           Settings
