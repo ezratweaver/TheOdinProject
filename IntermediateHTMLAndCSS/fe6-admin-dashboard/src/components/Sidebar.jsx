@@ -46,7 +46,7 @@ const Sidebar = () => {
           alignItems: "center",
           gap: "8px",
           fontFamily: "Roboto-Bold",
-          fontSize: "1.3rem",
+          fontSize: "21px",
         }}
       >
         <StyledIcon path={mdiViewDashboard} size={1.6} />
