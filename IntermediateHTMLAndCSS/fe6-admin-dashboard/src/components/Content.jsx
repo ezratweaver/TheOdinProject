@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import InfoCard from "./InfoCard";
 
 const Content = () => {
   return (
@@ -43,11 +44,13 @@ const Content = () => {
 
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start'}}>
 
-        <div>
+        <div style={{}}>
 
           <div>
             Annoucements
           </div>
+
+          <InfoCard />
 
         </div>
 
@@ -55,7 +58,10 @@ const Content = () => {
           
           <div>
             Trending
+
           </div>
+
+          <InfoCard />
 
         </div>
         
