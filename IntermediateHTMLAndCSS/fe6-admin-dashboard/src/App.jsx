@@ -8,7 +8,8 @@ const layoutCss = {
     'sidebar header'
     'sidebar content'`,
   gridTemplateColumns: "250px 1fr",
-  gridTemplateRows: "174px 8fr",
+  gridTemplateRows: "174px 100vh",
+  height: '100%'
 };
 
 const App = () => {
