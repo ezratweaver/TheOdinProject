@@ -13,7 +13,6 @@ const Content = () => {
             fontFamily: "Roboto-Medium",
             fontSize: "20px",
             padding: "40px",
-            paddingInline: "90px",
             paddingBottom: "20px",
             marginRight: 0,
           }}
@@ -24,11 +23,9 @@ const Content = () => {
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
             flexWrap: "wrap",
             gap: "30px",
             paddingLeft: "40px",
-            maxWidth: "87%",
           }}
         >
           <ProjectCard
@@ -69,7 +66,7 @@ const Content = () => {
           display: "flex",
           flexDirection: "column",
           paddingTop: "30px",
-          marginRight: "30px",
+          marginRight: "20px",
           gap: "30px",
         }}
       >
