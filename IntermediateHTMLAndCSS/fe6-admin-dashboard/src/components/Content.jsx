@@ -13,6 +13,7 @@ const Content = () => {
             fontFamily: "Roboto-Medium",
             fontSize: "20px",
             padding: "40px",
+            paddingInline: "90px",
             paddingBottom: "20px",
             marginRight: 0,
           }}
@@ -23,6 +24,7 @@ const Content = () => {
         <div
           style={{
             display: "flex",
+            justifyContent: "center",
             flexWrap: "wrap",
             gap: "30px",
             paddingLeft: "40px",
@@ -66,7 +68,7 @@ const Content = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          paddingTop: '30px',
+          paddingTop: "30px",
           marginRight: "30px",
           gap: "30px",
         }}
