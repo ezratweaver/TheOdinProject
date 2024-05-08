@@ -26,6 +26,7 @@ const Content = () => {
             flexWrap: "wrap",
             gap: "30px",
             paddingLeft: "40px",
+            flexShrink: 1
           }}
         >
           <ProjectCard
