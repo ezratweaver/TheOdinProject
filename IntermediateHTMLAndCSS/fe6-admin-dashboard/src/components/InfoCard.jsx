@@ -1,18 +1,14 @@
-import React from 'react'
+import React from "react";
 
 const InfoCard = () => {
-
-   
-
-
   return (
     <div
       style={{
         backgroundColor: "white",
         width: "400px",
         height: "230px",
-        minHeight: '280px',
-        maxWidth: '280px',
+        minHeight: "280px",
+        maxWidth: "280px",
         borderRadius: "5px",
         display: "flex",
         flexDirection: "column",
@@ -20,9 +16,22 @@ const InfoCard = () => {
         boxShadow: "2px 4px 4px -5px black",
       }}
     >
-
+      <ul
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          listStyle: 'none'
+        }}
+      >
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default InfoCard
+export default InfoCard;
