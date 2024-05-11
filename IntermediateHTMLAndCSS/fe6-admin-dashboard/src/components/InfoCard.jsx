@@ -1,6 +1,6 @@
 import React from "react";
 
-const InfoCard = () => {
+const InfoCard = ({ data }) => {
   return (
     <div
       style={{
@@ -25,10 +25,9 @@ const InfoCard = () => {
           listStyle: 'none'
         }}
       >
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        {data && data.map(() => {
+          return <li>HEllo</li>
+        })}
       </ul>
     </div>
   );
