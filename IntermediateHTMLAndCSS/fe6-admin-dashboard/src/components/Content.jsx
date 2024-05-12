@@ -2,6 +2,12 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import InfoCard from "./InfoCard";
 
+const annoucementsProps = [
+  {},
+  {},
+  {},
+]
+
 const Content = () => {
   return (
     <div
@@ -83,7 +89,9 @@ const Content = () => {
             Annoucements
           </div>
 
-          <InfoCard />
+          <InfoCard>
+          </InfoCard>
+
         </div>
 
         <div>
@@ -98,7 +106,9 @@ const Content = () => {
             Trending
           </div>
 
-          <InfoCard />
+          <InfoCard>
+          </InfoCard>
+
         </div>
       </div>
     </div>
